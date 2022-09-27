@@ -1,0 +1,104 @@
+body {
+    background: url("../images/c6bank/hero-bg-tablet.webp") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 100px - 100px);
+    display:  flex;
+    & > header {
+        height: 100px;
+        width: 100%;
+        display: flex;
+
+
+    }
+}
+button.disabled {
+    background: none;
+    border: solid 0.5px rgba(36,36,36,0.8);
+}
+
+button.disabladed:hover {
+    background-color: rgba(36,36,36,0.2);
+}
+
+button {
+    width: 290px;
+    height: 40px;
+    border: none;
+    text-transform: uppercase;
+    color: #333;
+    background: linear-gradient(150deg, #FFE45C 0%, #ffc900 100%);
+    font-size: 0.8em;
+    border-radius: 20px;
+}
+
+button:hover {
+    background: linear-gradient(150deg, #ffe978 0%, #fbd033 100%);
+    box-shadow: 0 px 2px 4px -1px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.full-banner {
+    width: 100%;
+    height: 100vh;
+    background-color: url("../images/c6bank/hero-bg.webp") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    .destak {
+        width: 40%;
+        height: 60vh;
+        //position: absolute;
+        bottom: 0;
+        left: 15%;
+        > h1 {
+            font-size: 4em;
+            line-height: 1em;
+            font-weight: 300;
+        }
+        h2, h3 {
+            font-weight: 300;
+        }
+        h2 {
+            width: 80%;
+            font-weight: 300;
+            margin-bottom: 5%;
+        }
+        h1, h2, h3 {
+            margin: 0;
+        }
+        h3 {
+            width: 95%;
+            background: rgba (36,36,36,0.35);
+            color: #fff;
+            font-weight: normal;
+            font-size: 0.8em;
+            line-height: 3em;
+            border-radius: 25px;
+            padding: 0 2%;
+            span {
+                width: fit-content;
+                display: inline-block;
+                background: #006d8f;
+                padding: 0 3%;
+                border-radius: 25px;
+                line-height: 1.6em;
+            }
+        }
+    }
+}
+
+footer{
+    background-color: #0c0c0c;
+    bottom: 0;
+    position: fixed;
+}
+
+//breakpoints, números que usamos para definir em que momento muda o CSS dependendo da tela
+//tablet - 768px, desktop - 992px - 1200px ou 1280px
+@media (min-width:992px){
+
+    .full-banner {
+        background: url("../images/c6bank/hero-bg.webp") no-repeat;
+        background-size: cover;
+    }
+}
