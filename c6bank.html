@@ -40,17 +40,25 @@
         button.style.width = "150px";
         button.classList.add('disabled');
 
-        window.addEventListener('scroll', (e) => {
-            console.log(body.clientHeight);
-            
-        if(window.scrollY < 100) {
-            header.style.background = 'none';
-            button.classList.add('disabled');
-        } else {
-            header.style.background = '#fff';
-            button.classList.remove('disabled');
-        }
-        });
+        // window.addEventListener('scroll', (e) => {
+        //     console.log(body.clientHeight);
+
+        //     if (window.scrollY < 100) {
+        //         header.style.background = 'none';
+        //         button.classList.add('disabled');
+        //     } else {
+        //         const aArray = header.querySelectorAll("a");
+        //         const log = header.querySelector(".jss12");
+        //     //     if {
+        //     //         (window.scrollY >= (body.clientHeight - 800)) {
+        //     //             header.style.background = '#000';
+        //     //             logo.style.fill = "#fff";
+        //     //         }
+        //     //     }
+        //     //     header.style.background = '#fff';
+        //     //     button.classList.remove('disabled');
+        //     // }
+        //     // });
     </script>
     <footer>CS6 BANK</footer>
 </body>
